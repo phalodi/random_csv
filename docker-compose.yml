@@ -1,0 +1,7 @@
+random_csv:
+  image: random_csv:1.0.0
+  command: tail -f /dev/null
+  environment:
+    JAVA_TOOL_OPTIONS: -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+  ports:
+  - "0:5005"
